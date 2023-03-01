@@ -1,0 +1,55 @@
+
+\documentclass[10pt,a4paper,twocolumn]{article}
+\usepackage{times}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{siunitx}
+\usepackage{hyperref}
+\usepackage{xparse}
+\usepackage{relsize}
+\usepackage{array}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\usepackage{tikz,pgfplots}
+\usepgfplotslibrary{fillbetween}
+\usetikzlibrary{patterns}
+\pgfplotsset{compat=1.18}
+\usepackage[margin=2cm]{geometry}
+\usepackage[most]{tcolorbox}
+
+\definecolor{britishracinggreen}{rgb}{0.0, 0.26, 0.15}
+
+\tcbset{
+    frame code={}
+    colback=gray!70,
+    colframe=white,
+    boxsep=0pt,
+    enlarge left by=0mm,
+}
+\newcommand{\capequation}[1]{\begin{tcolorbox} #1 \end{tcolorbox}\vspace{-0.5cm}}
+
+\title{Fórmulas Física 1 - 8201 - \textbf{[Work In Progress]}}
+
+\author{
+    Guido Rodriguez\\
+        \href{mailto:guerodriguez@fi.uba.ar}{\tt guerodriguez@fi.uba.ar} \\\\
+    Mi perfil de github con la última versión disponible \\
+        \href{https://github.com/ApophisXIV}{\tt ApophisXIV} 
+}
+
+\begin{document}
+\maketitle
+
+\input{cinematica}
+\input{dinamica}
+\input{dinamica_fluidos}
+\input{gravitacion}
+\input{masa_resorte}
+\input{pendulo_simple}
+\input{trabajo_energia}
+\input{sistemas_de_particulas}
+\input{cuerpo_rigido}
+\input{hidrodinamica.tex}
+\input{optica_geometrica.tex}
+\input{optica_fisica.tex}
+\input{ondas_mecanicas.tex}
+\end{document}

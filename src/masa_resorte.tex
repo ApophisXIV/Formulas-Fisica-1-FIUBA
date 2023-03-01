@@ -1,0 +1,94 @@
+\section{Masa - Resorte}
+    \capequation{Ley de Hooke}
+    \begin{itemize}
+        \item $\Delta x$ (Deformación)
+        \item -k (Constante elástica) (opuesta al desplazamiento)
+        \item ${F}_{e}$ (Fuerza elástica)
+    \end{itemize}
+    \begin{equation}
+        {F}_{e} = -k \cdot \Delta x
+    \end{equation}
+    
+    \capequation{Velocidad de la masa en un sistema masa-resorte}
+    \begin{itemize}
+        \item k (Constante elástica)
+        \item Si $V \in \mathbb{C}$ se entiende como un movimiento acotado
+    \end{itemize}
+    \begin{equation}
+        |v| = \sqrt{{v_o}^2 - \frac{k}{m} \cdot (x^2 - {x_o}^2)}
+    \end{equation}
+
+    \capequation{Cota de energía en un MAS}
+    \begin{equation}
+        Em = A^2 \cdot \frac{k}{2}
+    \end{equation}
+    \begin{center}
+      \begin{tikzpicture}[scale=0.65]
+        \begin{axis}[
+            ticks = none,
+            axis lines = center,
+            ymax=1.2,
+            xmin=-1.2,
+            xmax=1.2,
+            xlabel = \(\Delta x\), 
+            ylabel = {\(E\)}, 
+            xlabel style={
+                font=\large,
+                at={(ticklabel cs:1)},
+                anchor=north west,
+            },
+            ylabel style={
+                font=\large,
+                at={(ticklabel cs:1)},
+                anchor=north west,
+            },
+            ]
+            \addplot[smooth,britishracinggreen,name path=EM,domain=-1:1] {1} node[pos=0.8] (cotaEnergia) {};
+            \node [above,color=britishracinggreen] at (cotaEnergia) {Em};
+            \addplot[smooth,black!80,name path=A,domain=-1:1] {x*x};
+            \addplot[draw=none,name path=B,domain=-1:1] {0};
+            %
+            % Filling
+            \addplot[pattern=north west lines, pattern color= red!50] fill between[of=A and B,soft clip={domain=-1:1}]; % filling
+            \addplot[pattern=north east lines, pattern color=blue!50] fill between[of=A and EM,soft clip={domain=-1:1}]; % filling
+            %
+            \addplot[thick, samples=1, dashed, black!50] coordinates {(-1,0)(-1,1)};
+            \addplot[thick, samples=1, dashed, black!50] coordinates {(1,0)(1,1)};
+            %
+            %
+        \end{axis}
+        \path   (1.35,0.75) node [red!70]  {Ep}
+                (5.5,0.75)  node [red!70]  {Ep}
+                (2.35,2.75) node [blue!70] {Ec}
+                (4.5,2.75)  node [blue!70] {Ec};
+        %
+        \node[text width=1cm] at (1,-0.45) {-A};
+        \node[text width=1cm] at (7,-0.45) {A};
+    \end{tikzpicture}
+    \end{center}
+    
+    \capequation{Sistema masa-resorte (EDO)}
+    \begin{equation}
+        \frac{\mathrm{d^2x} }{\mathrm{d} t^2} + \frac{k}{m} \cdot x = 0
+    \end{equation}
+    Las soluciones de la ecuación son...
+    \begin{equation*}
+    \begin{split}
+        x(t) &= A_0 \cdot \sin(\omega\cdot t + \varphi_0)\\
+        v(t) &= \frac{\mathrm{dx} }{\mathrm{d} t} = \omega \cdot A_0 \cdot \cos(\omega\cdot t + \varphi_0)\\
+        a(t) &= \frac{\mathrm{d^2x} }{\mathrm{d} t^2} = - \omega^2 \cdot A_0 \cdot \sin(\omega\cdot t + \varphi_0)\\
+        a(t) &= \frac{\mathrm{d^2x} }{\mathrm{d} t^2} = - \omega^2 \cdot x(t)    
+    \end{split}
+    \end{equation*}
+    
+    \capequation{Período de un sistema masa-resorte}
+    \begin{itemize}
+        \item Pulsación o Frecuencia angulas ($\omega$)
+        \item Recordar que ($\omega = 2\pi \cdot F = \frac{2\pi}{T}$)
+    \end{itemize}
+    \begin{equation}
+    \begin{split}
+        \omega &= \sqrt{\frac{k}{m}}\\
+        T &= 2\pi \sqrt{\frac{m}{k}}
+    \end{split}    
+    \end{equation}

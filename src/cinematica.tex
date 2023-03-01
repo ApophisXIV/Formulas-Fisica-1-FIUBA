@@ -1,0 +1,99 @@
+\section{Cinemática}
+
+    \capequation{Arco de circunferencia}
+    \begin{equation}
+    s = R \cdot \theta
+    \end{equation}
+    
+    \capequation{Velocidad Angular}
+    \begin{equation}
+    \vec{\Omega} = \frac{\mathrm{d} \theta}{\mathrm{d} t} \cdot \hat{k}
+    \end{equation}
+    
+    \capequation{Aceleración Angular}
+    \begin{equation}
+    \vec{\gamma} = \frac{\mathrm{d} \Omega}{\mathrm{d} t} \cdot \hat{k} = \frac{\mathrm{d^2} \theta}{\mathrm{d} t^2} \cdot \hat{k}
+    \end{equation}
+    
+    \capequation{Velocidad Tangencial-Angular (módulo)}
+    \begin{equation}
+    v = \Omega \cdot R
+    \end{equation}
+    
+    \capequation{Coordenadas intrínsecas}
+    \begin{center}
+    \begin{tikzpicture}
+        \draw (-1.5,-1) .. controls (-0.5,0.5) .. (1,1);
+        \filldraw (0.25,-0.5) circle (1pt);
+        \draw (0.25,-0.5)--(-0.5,-1.3) node at (0.1,-0.9) {$\rho$};
+        \filldraw[color=black!60, fill=black!5, opacity=0.5](0.25,-0.5) circle (1.1);
+        \draw[->,britishracinggreen, thick] (-0.5,0.325)--(0.45,1.1) node[above]{$\vec{v}$};
+        \draw[->,blue,thick] (-0.5,0.325)--(0.0,0.725) node[above left]{$a_t$};
+        \draw[->,blue,thick] (-0.5,0.325)--(-0,-0.2) node[below]{$a_c$};
+        \draw[->,red,thick] (-0.5,0.325)--(0.35,0.25) node[below]{$\vec{a}$};
+        \filldraw (-0.5,0.325) circle (1pt);
+    \end{tikzpicture}
+    \end{center}
+    \begin{itemize}
+        \item Se descompone la aceleración en una base intrínseca ($\hat{t},\hat{n},\hat{b}$)
+        \item Tomar la velocidad para construir la coordenada tangencial
+        \item Si es 2D, para conseguir la coordenada $\hat{n}$ cambiar las componentes de $\hat{t}$ y cambiar el signo de alguna de ellas de tal forma que respete el sentido físico (que apunte al centro de curvatura). 
+    \end{itemize}
+    
+    \capequation{Radio del círculo obsculador}
+    \begin{equation}\label{eq:radio_circ_obs}
+    \rho = \frac{||\vec{v}||^2}{a_c}
+    \end{equation}
+    
+    \capequation{Ecuación de posición}
+    \begin{equation}
+        \vec{r}_{(t)}= (x_{(t)},y_{(t)},z_{(t)})
+    \end{equation}
+    
+    \capequation{Ecuación de velocidad}
+    \begin{equation}
+        \vec{v}_{(t)} = \frac{\mathrm{d} \vec{r}}{\mathrm{d} t} = \left(
+         \frac{\mathrm{d}x}{\mathrm{d} t},
+         \frac{\mathrm{d}y}{\mathrm{d} t},
+         \frac{\mathrm{d}z}{\mathrm{d} t}
+        \right)
+    \end{equation}
+    
+    \null
+    \capequation{Ecuación de aceleración}
+    \begin{equation}
+        \vec{a}_{(t)} = \frac{\mathrm{d^2} \vec{r}}{\mathrm{d} t^2} = \left(
+         \frac{\mathrm{d^2}x}{\mathrm{d} t^2},
+         \frac{\mathrm{d^2}y}{\mathrm{d} t^2},
+         \frac{\mathrm{d^2}z}{\mathrm{d} t^2}
+        \right)
+    \end{equation}
+    
+    \capequation{Ecuación de \textit{Jerk} (tirón)}
+    \begin{equation}
+        \vec{j}_{(t)} = \frac{\mathrm{d^3} \vec{r}}{\mathrm{d} t^3} = \left(
+         \frac{\mathrm{d^3}x}{\mathrm{d} t^3},
+         \frac{\mathrm{d^3}y}{\mathrm{d} t^3},
+         \frac{\mathrm{d^3}z}{\mathrm{d} t^3}
+        \right)
+    \end{equation}
+    
+    \capequation{Movimiento relativo}
+    \begin{equation}
+    \begin{split}
+        \vec{r}_{p/o} = \vec{r}_{p/o'} + \vec{r}_{o'/o}\\
+        \vec{v}_{p/o} = \vec{v}_{p/o'} + \vec{v}_{o'/o}\\
+        \vec{a}_{p/o} = \vec{a}_{p/o'} + \vec{a}_{o'/o}\\
+    \end{split}
+    \end{equation}
+    
+    \capequation{MRUV}
+    \begin{equation}
+    \begin{split}
+        x_{(t)}&= x_{0} + v_{0} \cdot t + \frac{1}{2} \cdot a \cdot t^2\\
+        {v_{f}}^2-{v_{0}}^2 &= 2 \cdot a \cdot ({x_{f}} - {x_{0}})\\
+        v_{(t)}&= v_{0} + a \cdot t\\
+        a_{(t)}&= cte\\
+    \end{split}
+    \end{equation}
+    

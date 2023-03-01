@@ -1,0 +1,215 @@
+\section{Ondas}
+\capequation{Ondas mecánicas}
+\begin{itemize}
+    \item Propagación de energía en el medio material, no así de materia.
+    \item Pueden ser de propagación transversal, longitudinal o una combinación de ambas
+    \begin{itemize}
+        \item \textbf{Transversal}: Perturbación perpendicular a la dirección de propagación
+        \item \textbf{Longitudinal}: Perturbación paralela a la dirección de propagación
+    \end{itemize}
+    \item Sentido de propagación
+    \begin{itemize}
+        \item Viajeras
+        \item Reflejadas
+        \item Estacionarias
+    \end{itemize}
+\end{itemize}
+
+\capequation{Ecuación de una onda viajera}
+\begin{itemize}
+    \item El signo depende del sentido de propagación. Negativo izquierda a derecha, positivo caso contrario.
+    \begin{equation}
+        \psi_{(x,t)} = A \sin(kx \pm \omega t + \phi)
+    \end{equation}
+\end{itemize}
+
+\capequation{Elementos de la onda}
+\begin{align}
+    f &= \frac{1}{T}            & f&=\frac{v_p}{\lambda} & T &=\frac{1}{f}\\
+    v_p &= f \cdot \lambda & v_p &= \frac{\lambda}{T} &\\
+    \omega &=2\pi \cdot f & \omega &= \frac{2\pi}{T}   & \omega&= k \cdot v_p \\
+    k &= \frac{2\pi}{\lambda}   & k&= \frac{\omega}{v_p} & 
+\end{align}
+
+\capequation{Velocidad, posición y aceleración de perturbación}
+\begin{equation}
+\begin{split}
+    r_{(x,t)} &= \ \ \ A \sin(kx \pm \omega t + \phi_0)\\
+    v_{(x,t)} &= \ \ \ A \cos(kx \pm \omega t + \phi_0)(\pm\omega)\\
+    a_{(x,t)} &= -A \sin(kx \pm \omega t + \phi_0)(\pm\omega)^2\\
+\end{split}
+\end{equation}
+
+\capequation{Velocidad de propagación en diferentes medios}
+\vspace{0.25cm}
+\begin{itemize}
+    \item Todas son expresadas en $[\frac{m}{s}]$
+    \item Cuerda (siempre transversales)
+    \begin{equation}
+        v_p=\sqrt{\frac{T}{\mu}}
+    \end{equation}
+    \item Varilla
+        \begin{itemize}
+            \item Transversales
+            \item G: Modulo de Young transversal
+            \begin{equation}
+                v_p=\sqrt{\frac{G}{\rho}}
+            \end{equation}
+            \item Longitudinales
+            \item Y: Modulo de Young longitudinal
+            \begin{equation}
+                v_p=\sqrt{\frac{Y}{\rho}}
+            \end{equation}
+        \end{itemize}
+    \item Gases
+    \begin{itemize}
+        \item General
+        \begin{equation}
+            v_p = \sqrt{\frac{B}{\rho}}
+        \end{equation}
+        \item En función de la temperatura del aire
+        \begin{equation}
+            v_p = 330\sqrt{1+\frac{\Delta t}{273C^o}} 
+        \end{equation}
+    \end{itemize}
+    \item Resortes
+    \begin{equation}
+        v_p = \sqrt{\frac{k\cdot L}{\mu}}
+    \end{equation}
+\end{itemize}
+
+\capequation{Ondas en un gas}
+\begin{itemize}
+    \item Onda de desplazamiento
+    \begin{equation}
+        \psi_{(x,t)} = P_0 \sin(kx \pm \omega t + \phi_0)
+    \end{equation}
+    \item Onda de presión
+    \begin{equation}
+        P_{(x,t)} = P_0 \cos(kx \pm \omega t + \phi_0)
+    \end{equation}
+\end{itemize}
+
+\capequation{Intensidad de una onda}
+\vspace{0.25cm}
+\begin{itemize}
+    \item A: Amplitud
+    \item $\rho$: Densidad volumétrica
+    \item $\omega$: Pulsación
+    \item $v_p$: Velocidad de propagación del medio
+\end{itemize}
+\begin{equation}
+    I = \frac{1}{2} \cdot A^2 \cdot \rho \cdot v_p \cdot \omega^2
+\end{equation}
+
+\capequation{Intensidad de una onda de presión sonora (Aire)}
+\vspace{0.25cm}
+\begin{itemize}
+    \item P: Presión
+    \item $\rho$: Densidad volumétrica
+    \item $\omega$: Pulsación
+    \item $v_p$: Velocidad de propagación del medio
+\end{itemize}
+\begin{equation}
+    I = \frac{P^2}{2\cdot \rho \cdot v_p}
+\end{equation}
+
+\capequation{Potencia de una onda}
+\begin{itemize}
+    \item Notar que difiere en $\mu$ con la ecuación de Intensidad
+    \item A: Amplitud
+    \item $\rho$: Densidad lineal
+    \item $\omega$: Pulsación
+    \item $v_p$: Velocidad de propagación del medio
+\end{itemize}
+\begin{equation}
+    P = \frac{1}{2} \cdot A^2 \cdot \mu \cdot v_p \cdot \omega^2
+\end{equation}
+
+\capequation{Potencia (expresión equivalente)}
+\begin{itemize}
+    \item $I$: Intensidad
+    \item $s$: Sección
+\end{itemize}
+\begin{equation}
+    P = I \cdot s
+\end{equation}
+
+\capequation{Energía media}
+\begin{equation}
+    E = P \cdot \Delta t
+\end{equation}
+\begin{equation}
+    E = \frac{1}{2} \cdot A^2 \cdot \mu \cdot v_p \cdot \omega^2
+\end{equation}
+
+\capequation{Densidad de Energía}
+\begin{itemize}
+    \item Notar que difiere en $v_p$ con la ecuación de Intensidad
+\end{itemize}
+\begin{equation}
+    E = \frac{1}{2} \cdot A^2 \cdot \rho \cdot \omega^2
+\end{equation}
+
+\capequation{Decibeles}
+\vspace{0.25cm}
+\begin{itemize}
+    \item N.I.S. (Nivel de Intensidad Sonora)
+    \item Mínimo nivel de intensidad sonora audible: \\ $I_0 = 10^{-12} \left[\frac{W}{m^2}\right]$
+\end{itemize}
+\begin{equation}
+    \beta = 10\log\left(\frac{I}{10^{-12}}\right)
+\end{equation}
+
+\capequation{Efecto Doppler}
+\begin{itemize}
+    \item $v_p$: Velocidad de propagación Tratarlo con sentido (signo).
+    \item $v_o$: Velocidad de observador Tratarlo con sentido (signo).
+    \item $v_f$: Velocidad de fuente
+    \item $f$: Frecuencia emitida
+    \item $f'$: Frecuencia percibida
+\end{itemize}
+\begin{equation}
+    f' = f \left(\frac{v_p - (v_o)}{v_p - (v_f)}\right)
+\end{equation}
+
+\capequation{Ecuación de superposición de ondas}\vspace{0.25cm}
+\begin{itemize}
+    \item Identidades trigonométricas
+    \begin{equation*}
+        \begin{split}
+            \sin(A) + \sin(B) &= 2 \sin\left(\frac{A+B}{2}\right)\cos\left(\frac{A-B}{2}\right)\\
+            \cos(A) + \cos(B) &= 2 \cos\left(\frac{A+B}{2}\right)\cos\left(\frac{A-B}{2}\right)\\
+        \end{split}
+    \end{equation*}
+    
+    \item Superposición general 
+    \begin{equation}
+    \begin{split}
+        \psi_{(x,t)} &= 2A \cdot \sin\left(kx + {\frac{\phi_1 +\phi_2}{2}}\right) \cdot \cos\left({\omega t+ \frac{\phi_1 - \phi_2}{2}}\right)\\
+        \psi_{(x,t)} &= 2A \cdot \cos\left(kx + {\frac{\phi_1 +\phi_2}{2}}\right) \cdot \cos\left({\omega t+ \frac{\phi_1 - \phi_2}{2}}\right)\\
+    \end{split}
+    \end{equation}
+    
+    \item Superposición totalmente constructiva
+    \begin{equation}
+        \psi_{(x,t)} = 2A \cdot \cos\left({kx-\omega t}\right)
+    \end{equation}
+    
+    \item Superposición totalmente destructiva
+    \begin{equation}
+        \psi_{(x,t)} = 0
+    \end{equation}
+\end{itemize}
+
+\capequation{Tubo Abierto-Abierto}
+\begin{align}
+    f_n &= n \cdot \frac{V_p}{2L}   &  f_n &= n \cdot f_0 \\
+    \lambda&=\frac{2L}{n}           &  L   &= \frac{n\cdot\lambda}{2}
+\end{align}
+
+\capequation{Tubo Abierto-Cerrado}
+\begin{align}
+    f_n &= (2n+1) \cdot \frac{V_p}{4L}  &  f_n &= (2n+1) \cdot f_0 \\ 
+    \lambda&=\frac{4L}{(2n+1)}          &  L   &= \frac{(2n+1)\cdot\lambda}{4}
+\end{align}

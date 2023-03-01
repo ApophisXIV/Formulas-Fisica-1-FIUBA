@@ -1,0 +1,51 @@
+
+\section{Péndulo simple}
+    \capequation{Péndulo Simple (EDO)}
+    \begin{equation}
+        \frac{\mathrm{d^2x} }{\mathrm{d} t^2} + \frac{g}{l} \cdot x = 0
+    \end{equation}
+    Las soluciones de la ecuación son...
+    \begin{equation*}
+    \begin{split}
+        x(t) &= A_0 \cdot \sin(\omega\cdot t + \varphi_0)\\
+        v(t) &= \frac{\mathrm{dx} }{\mathrm{d} t} = \omega \cdot A_0 \cdot \cos(\omega\cdot t + \varphi_0)\\
+        a(t) &= \frac{\mathrm{d^2x} }{\mathrm{d} t^2} = - \omega^2 \cdot A_0 \cdot \sin(\omega\cdot t + \varphi_0)\\
+        a(t) &= \frac{\mathrm{d^2x} }{\mathrm{d} t^2} = - \omega^2 \cdot x(t)    
+    \end{split}
+    \end{equation*}
+    Las soluciones en función del ángulo...
+    \begin{equation*}
+    \begin{split}
+        \theta_{(t)} &= \theta_0 \cdot \sin(\omega\cdot t + \varphi_0)\\
+        \Omega_{(t)} &= \frac{\mathrm{d\theta} }{\mathrm{d} t} = \omega \cdot \theta_0 \cdot \cos(\omega\cdot t + \varphi_0)\\
+        \gamma_{(t)} &= \frac{\mathrm{d^2\theta} }{\mathrm{d} t^2} = - \omega^2 \cdot \theta_0 \cdot \sin(\omega\cdot t + \varphi_0)\\
+        \gamma_{(t)} &= \frac{\mathrm{d^2\theta} }{\mathrm{d} t^2} = - \omega^2 \cdot \theta(t)    
+    \end{split}
+    \end{equation*}
+
+    \capequation{Período de un péndulo simple}
+    \begin{itemize}
+        \item Pulsación o Frecuencia angular ($\omega$)
+        \item Recordar que ($\omega = 2\pi \cdot T = \frac{2\pi}{F}$)
+        \item L (Longitud de la cuerda)
+    \end{itemize}
+    \begin{equation}
+    \begin{split}
+        \omega &= \sqrt{\frac{g}{L}}\\
+        T &= 2\pi \sqrt{\frac{L}{g}}
+    \end{split}    
+    \end{equation}
+    
+    \capequation{Tensión de la cuerda}
+    \begin{itemize}
+        \item Recordar ecuación \ref{eq:radio_circ_obs}
+    \end{itemize}
+    \begin{equation}
+    \begin{split}
+        T &= m \cdot g \cdot cos(\theta) + m \cdot a_c\\
+        T &= m \cdot g \cdot cos(\theta) + m \cdot \frac{v^2}{L}\\
+        \text{Si está en reposo...}\\
+        T &= m \cdot g \cdot cos(\theta)\\
+    \end{split}
+    \end{equation}
+    

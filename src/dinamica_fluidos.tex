@@ -1,0 +1,29 @@
+\section{Dinámica de fluidos}
+    \capequation{Fuerza de rozamiento viscoso}
+    \begin{itemize}
+        \item $\mu$ (Coeficiente de viscosidad) ($\mu = 1$)
+        \item k (Coeficiente de arrastre)
+        \item v (El signo depende del sist. de ref. Opuesto al desplazamiento relativo)
+    \end{itemize}
+    \begin{equation}
+        \vec{F}_{rv} = -k \cdot \vec{v}^{\ \mu}
+    \end{equation}
+    
+    \capequation{Ley de Stokes (esferas)}
+    \begin{itemize}
+        \item $\mu$ (Coeficiente de viscosidad)
+        \item R (Radio de la esfera)
+    \end{itemize}
+    \begin{equation}
+        \vec{F}_{rv} = 6\pi \cdot R \cdot \mu \cdot \vec{v} 
+    \end{equation}
+    
+    \capequation{Forma diferencial}
+    \begin{equation}
+        \vec{F} - \vec{F}_{rv} = m \cdot \frac{\mathrm{d}\vec{v}}{\mathrm{d}t}
+    \end{equation}
+    
+    \capequation{Velocidad Límite}
+    \begin{equation}
+        v = \frac{F}{k} \left(1-e^{-\frac{k}{m}\cdot t}\right)
+    \end{equation}
